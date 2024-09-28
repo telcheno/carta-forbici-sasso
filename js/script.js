@@ -24,6 +24,8 @@ let pc = 0;
 let vincite = 0;
 let sconfitte = 0;
 
+alert("CIAO COMINCIAMO");
+
 //gioco: si arrriva a 3, vincite o sconfitte
 while(vincite < 3 && sconfitte < 3){
     //scelta del pc numero aleatorio
@@ -33,8 +35,8 @@ while(vincite < 3 && sconfitte < 3){
     giocatote = prompt("Sceglie: 1 per Carta ✋, 2 per Firbici ✌️, 3 per Sasso ✊");
 
     //visualisazione scelte
-    alert("Pc sceglie " + giocata(pc));
-    alert("Giocatore sceglie " + giocata(giocatote));
+    alert("Il pc sceglie " + giocata(pc));
+    alert("Tu hai scelto " + giocata(giocatote));
 
     //
     if(giocatote == pc){
