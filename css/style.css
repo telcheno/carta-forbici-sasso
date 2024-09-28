@@ -1,0 +1,12 @@
+body{
+    background-color: rgba(157, 255, 222, 0.315);
+}
+
+.container{
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    width: 500px;
+    height: 500px;
+    border-radius: 25px;
+}
