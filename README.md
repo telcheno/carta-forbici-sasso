@@ -1,0 +1,1 @@
+# carta-forbici-sasso
