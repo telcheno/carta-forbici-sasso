@@ -1,12 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
 body{
-    background-color: rgba(157, 255, 222, 0.315);
+    /* background-color: rgba(157, 255, 222, 0.315); */
+    background-image: url(/img/bg-christmas-tree.JPG);
 }
 
 .container{
-    margin: 0 auto;
+    margin: 20px auto;
+    padding: 10px;
+    box-shadow: 10px 10px 10px;
     text-align: center;
-    background-color: white;
+    background-color: rgb(146, 243, 107);
     width: 500px;
-    height: 500px;
+    height: auto;
     border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#img-pc{
+    background-color: rgb(176, 228, 228);
+    border:solid black 3px;
+}
+
+#img-giocatore{
+    background-color: rgb(240, 171, 171);
+    border:solid black 3px;
+}
+
+.btn-img{
+    border:solid black 2px;
+    background-color: rgb(240, 255, 240);
+    border-radius: 8px;
+    margin: 15px;
+    box-shadow: 9px 6px 3px  rgba(0, 0, 0, 0.19);
+}
+
+#punteggio{
+    margin-bottom: 5px;
+    font-size: 22px;
+}
+
+#num-vincite{
+    font-size: 30px;
+}
+
+#num-sconfite{
+    font-size: 30px;
+
 }
