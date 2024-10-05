@@ -7,13 +7,14 @@ let sconfitte = 0;
 
 //recupero ellemeti del DOM
 const imgPc = document.getElementById("img-pc");
-const imgGiocatore = document.getElementById("img-giocatore")
+const imgGiocatore = document.getElementById("img-giocatore");
 const idRisultato = document.getElementById("risultato");
 const btnCarta = document.getElementById("btn-carta");
 const btnForbici = document.getElementById("btn-forbici");
 const btnSasso = document.getElementById("btn-sasso");
 let numVincite = document.getElementById("num-vincite");
 let numSconfite = document.getElementById("num-sconfite");
+const fineGioco = document.getElementById("fine-gioco");
 
 
 //funzione per la scelta di un numero random per la scelta del pc
@@ -38,8 +39,8 @@ function sceltaPc(pc){
     }
 }
 
+//funzione di gioco
 function risultato(){
-    
     if(giocatote == pc){
         idRisultato.innerText = "PAREGGIO 🤔!";
         // alert("PAREGGIO 🤔");
@@ -64,7 +65,36 @@ function risultato(){
         numSconfite.innerText = sconfitte;
         // alert("HAI PERSO 😫");
     }
+
+    
+    //risultato finale
+    if(vincite == 3){
+        idRisultato.style.display = "none";
+        btnCarta.style.display = "none";
+        btnForbici.style.display = "none";
+        btnSasso.style.display = "none";
+        fineGioco.innerHTML = `
+        <h2>Complimenti AHI VINTO 😂😂!!</h2>
+        <button onclick="window.location.reload();">Vuoi giocare ancora</button>`;
+        // idRisultato.innerText  = "Complimenti AHI VINTO 😂😂!!";
+        // alert("Complimenti AHI VINTO 😂😂😂!!");
+    }if(sconfitte == 3){        
+        idRisultato.style.display = "none";
+        idRisultato.style.display = "none";
+        btnCarta.style.display = "none";
+        btnForbici.style.display = "none";
+        btnSasso.style.display = "none";
+        fineGioco.innerHTML = `
+        <h2>Peccato AHI PERSO 😫!!</h2>
+        <button onclick="window.location.reload();">Vuoi giocare ancora</button>`;
+        
+        // idRisultato.innerHTML = "Peccato AHI PERSO 😫!!";
+        // alert("Peccato AHI PERSO 😫!!");
+    }
+
+
 }
+
 //scelta giocatore
 btnCarta.addEventListener("click", () =>{
     giocatote = 1;
@@ -90,7 +120,6 @@ btnSasso.addEventListener("click", () =>{
     risultato();
 })
     
-
 
 
 
