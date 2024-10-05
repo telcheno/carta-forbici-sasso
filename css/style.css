@@ -42,6 +42,14 @@ body{
     box-shadow: 9px 6px 3px  rgba(0, 0, 0, 0.19);
 }
 
+#fine-gioco > button{
+    font-size: 18px;
+    padding: 10px;
+    border-radius: 12px;
+    background-color: rgb(109, 109, 247);
+    color: white;
+}
+
 #punteggio{
     margin-bottom: 5px;
     font-size: 22px;
