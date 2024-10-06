@@ -25,11 +25,13 @@ body{
 }
 
 #img-pc{
+    width: 25%;
     background-color: rgb(176, 228, 228);
     border:solid black 3px;
 }
 
 #img-giocatore{
+    width: 25%;
     background-color: rgb(240, 171, 171);
     border:solid black 3px;
 }
@@ -38,7 +40,7 @@ body{
     border:solid black 2px;
     background-color: rgb(240, 255, 240);
     border-radius: 8px;
-    margin: 15px;
+    margin: 8px;
     box-shadow: 9px 6px 3px  rgba(0, 0, 0, 0.19);
 }
 

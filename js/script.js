@@ -37,6 +37,7 @@ function sceltaPc(pc){
         imgPc.src = "./img/rock.svg";
         console.log("PC " + pc);    
     }
+
 }
 
 //funzione di gioco
