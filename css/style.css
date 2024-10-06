@@ -41,7 +41,8 @@ body{
     background-color: rgb(240, 255, 240);
     border-radius: 8px;
     margin: 8px;
-    box-shadow: 9px 6px 3px  rgba(0, 0, 0, 0.19);
+    box-shadow: 5px 5px 3px  rgba(0, 0, 0, 0.87);
+    /* box-shadow: 8px 8px 5px  rgb(188, 23, 166); */
 }
 
 #fine-gioco > button{
