@@ -42,6 +42,7 @@ function sceltaPc(pc){
 
 //funzione di gioco
 function risultato(){
+    
     if(giocatote == pc){
         idRisultato.innerText = "PAREGGIO 🤔!";
         // alert("PAREGGIO 🤔");
@@ -66,6 +67,7 @@ function risultato(){
         numSconfite.innerText = sconfitte;
         // alert("HAI PERSO 😫");
     }
+  
 
     
     //risultato finale
@@ -96,13 +98,23 @@ function risultato(){
 
 }
 
+async function animazioneSceltaPc(pc) {
+    const opzioni = [1, 2, 3];
+    for (const opzione of opzioni) {
+        imgPc.src = `./img/${opzione}.svg`;
+        await new Promise(resolve => setTimeout(resolve, 100)); // Aspetta 100ms
+    }
+    imgPc.src = `./img/${pc}.svg`; // Mostra la scelta finale
+}
 //scelta giocatore
 btnCarta.addEventListener("click", () =>{
     giocatote = 1;
     imgGiocatore.src = "./img/paper.svg";
     pc = numAleatorio (1, 3);
     sceltaPc(pc);
-    risultato();    
+    risultato();  
+    
+    
 })
 
 btnForbici.addEventListener("click", () =>{

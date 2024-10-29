@@ -12,12 +12,12 @@ body{
 
 .container{
     margin: 20px auto;
-    padding: 10px;
+    padding: 15px;
     box-shadow: 10px 10px 10px;
     text-align: center;
     background-color: rgb(146, 243, 107);
-    width: 500px;
-    height: auto;
+    width: 520px;
+    min-height: auto;
     border-radius: 45px;
     display: flex;
     flex-direction: column;
@@ -42,7 +42,19 @@ body{
     border-radius: 8px;
     margin: 8px;
     box-shadow: 5px 5px 3px  rgba(0, 0, 0, 0.87);
-    /* box-shadow: 8px 8px 5px  rgb(188, 23, 166); */
+}
+
+#btn-carta:hover{
+    width: 90px;
+    height: 90px;
+}
+#btn-forbici:hover{
+    width: 90px;
+    height: 90px;
+}
+#btn-sasso:hover{
+    width: 90px;
+    height: 90px;
 }
 
 #fine-gioco > button{
@@ -50,8 +62,10 @@ body{
     padding: 10px;
     border-radius: 12px;
     background-color: rgb(109, 109, 247);
+    box-shadow: 5px 5px 5px black;
     color: white;
 }
+
 
 #punteggio{
     margin-bottom: 5px;
